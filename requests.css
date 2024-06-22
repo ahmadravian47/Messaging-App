@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #101820;
+}
+
+/*-------------------Utility classes--------------------------*/
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/*-----------------------------------------------------------------*/
+.top{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+.search-container {
+   display: flex;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   align-items: center;
+   border: 2px solid #2c3640;
+   background-color: #2c3640;
+   width: 20%;
+   border-radius: 40px;
+}
+.search-container i{
+    color:#ffffff5c;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    background-color: #2c3640;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+.search-input::placeholder {
+  color: #ffffff5c;
+}
+.search-input:focus {
+    border-color: #4CAF50;
+}
+.top .button a{
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 12px 24px;
+    transition: color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+.top .button a:hover{
+    background-color: #101820;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+}
+
+/*-----------------------------------------------------------*/
+.suggestion-section{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.suggestion-section .suggestions{
+    margin-top: 1rem;
+   
+}
+.suggestion-section .suggestions .suggestion{
+    border: 1px solid #4CAF50;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+    align-items: center;
+}
+.suggestion-section .suggestions .suggestion img{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+}
+.suggestion-section .suggestions .suggestion h2{
+   margin-left: 1rem;
+}
+.suggestion-section .suggestions .suggestion a{
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 12px 24px;
+    transition: color 0.4s ease;
+ }
+ .suggestion-section .suggestions .suggestion a:hover{
+    background-color: #101820;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    padding: 12px 24px;
+    cursor: pointer;
+ }

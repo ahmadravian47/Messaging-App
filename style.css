@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #101820;
+}
+
+/*-------------------Utility classes--------------------------*/
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/*---------------------------------------------*/
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.hero h1{
+    font-size: 72px;
+    text-align: center;
+    line-height: 80px;
+}
+.hero h3{
+    margin-top: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.hero a{
+    border: 1px solid #91cfa9;
+    background-color: #91cfa9;
+    color: #101820;    
+    padding: 12px 24px;
+    margin-top: 2rem;
+    font-weight: 400;
+    transition: background-color 0.4s ease;
+}
+.hero a:hover{
+    border: 1px solid #91cfa9;
+    background-color: #101820;
+    color: #91cfa9;    
+    padding: 12px 24px;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+/*---------------------------------------------*/
+.section2{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+/*---------------------------------------------*/
+.section3{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.section3 h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+}
+.section3 h3{
+    margin-top: 1rem;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+}
+.section3 a{
+    border: 1px solid #91cfa9;
+    background-color: #91cfa9;
+    color: #101820;    
+    padding: 12px 24px;
+    margin-top: 2rem;
+    font-weight: 400;
+}

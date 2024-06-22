@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #101820;
+}
+h2{
+    text-align: center;
+    padding: 1rem;
+    color: #91cfa9;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #1A242F;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    height: 90vh;
+}
+
+.main .upper{
+    height: 90%;
+    overflow-y: auto;
+    max-height: 90%; /* Adjust the height according to your design */
+}
+.main .lower{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    position: static;
+}
+.main .lower input{
+    height: 100%;
+    width: 85%;
+    background-color: #101820;
+    border: 1px solid #101820;
+    padding-left: 1rem;
+}
+.main .lower input:placeholder-shown{
+    padding-left: 1rem;
+    color: white;
+}
+.main .lower a{
+    background-color: #91cfa9;
+    color: #101820;    
+    padding: 12px 24px;
+    font-weight: 400;
+    transition: background-color 0.4s ease;
+}
+.main .lower a:hover{
+    border: 1px solid #91cfa9;
+    background-color: #101820;
+    color: #91cfa9;   
+    cursor: pointer; 
+}
+.main .upper h4{
+    font-weight: 600;
+    font-size: 24px;
+}
+.main .upper p{
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #91cfa9;
+    color: #101820;
+    width: 30%;
+    padding: 0.5rem ;
+    border-radius: 30px;
+}
+.main .upper div{
+    margin: 2rem 0;
+}

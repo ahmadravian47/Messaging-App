@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Message</title>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-color: #101820;
+        height: 100vh;
+    }
+
+    .login-container {
+        background-color: #101820;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 400px;
+        text-align: center;
+        margin-right: 20px;
+        /* Add margin to create space between login container and image */
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+
+    .login-container h2 {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .login-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+
+
+    .options-container {
+        margin-top: 15px;
+    }
+
+    .options-container a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 15px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.05rem;
+
+    }
+
+    .image-container {
+        flex: 1;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 400px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    span {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .login {
+        background-color: #91cfa9;
+        color: #fff;  
+        width: 100%;
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        padding: 0.3rem 0;
+        border-radius: 5px;
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+    input{
+        background-color: #2c3640;
+        
+        border: 1px solid #2c3640 ;
+    }
+
+    .login:hover {
+        background-color:  #a7ceb6;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+    <h2>Login to CHATPULSE</h2>
+    <form id="loginForm">
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button type="submit" class="login" id="btn">Login</button>
+    </form>
+
+    <div class="options-container">
+        <a href="./signup.html">Not a member? <span>Sign Up</span> here</a>
+    </div>
+</div>
+
+</body>
+<script src="./login.js"></script>
+</html>
