@@ -68,7 +68,7 @@ let message_sending_button = document.querySelector('.send_message');
 message_sending_button.addEventListener('click', function () {
     // Move the message variable inside the event listener
     let message = document.querySelector('.message').value;
-    document.querySelector('.message').value = '';
+    document.querySelector('.message').value = '';;
 
     // Assuming jsonObject and receiver_id are defined somewhere in your code
     const data2 = { email: jsonObject.email, id: receiver_id, message: message };
